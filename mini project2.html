@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Cart Calculator</title>
+</head>
+<body>
+<h2>Online Order Cart Calculator</h2>
+<script>
+    let cartPrices = [1200, 850, 430, 299, 700];
+    let total = 0;
+    for (let i = 0; i < cartPrices.length; i++) {
+        total = total + cartPrices[i];
+    }
+    let average = total / cartPrices.length;
+    document.writeln("Total Amount: " + total + "<br>");
+    document.writeln("Average Price: " + average);
+</script>
+</body>
+</html>

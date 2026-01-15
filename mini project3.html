@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Summary</title>
+</head>
+<body>
+<h2>Attendance Summary System</h2>
+<script>
+    let attendance = ["P", "A", "P", "P", "A", "P", "A"];
+    let presentCount = 0;
+    let absentCount = 0;
+    for (let i = 0; i < attendance.length; i++) {
+        if (attendance[i] === "P") {
+            presentCount++;
+        } else if (attendance[i] === "A") {
+            absentCount++;
+        }
+    }
+    document.writeln("Present: " + presentCount + "<br>");
+    document.writeln("Absent: " + absentCount);
+</script>
+</body>
+</html>

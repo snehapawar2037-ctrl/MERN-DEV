@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Stock Alert</title>
+</head>
+<body>
+<h2>Product Stock Alert System</h2>
+<script>
+    let stock = [12, 45, 8, 30, 18];
+    for (let i = 0; i < stock.length; i++) {
+        if (stock[i] < 20) {
+            document.writeln("Product " + (i + 1) + ": Reorder Required<br>");
+        } else {
+            document.writeln("Product " + (i + 1) + ": Stock OK<br>");
+        }
+    }
+</script>
+</body>
+</html>
